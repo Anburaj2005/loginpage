@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>1099-Dashboard-Upload-Excel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/styles.css" rel="stylesheet">
+ <link href="css/font-awesome.min.css" rel="stylesheet">
+ <link rel="icon" type="image/png" sizes="16x16" href="https://d2zo3rt1cr75v5.cloudfront.net/Test/Images/favicon.png">
+    <link href="css/footable-0.1.css" rel="stylesheet">
+    <link href="css/footable.sortable-0.1.css" rel="stylesheet">
+    <link href="css/footable.paginate.css" rel="stylesheet">
+
+   <script src="js/bootstrap.min.js"></script>
+       <script src="js/jquery.min.js"></script>
+    <script src="js/footable.js"></script>
+    <script src="js/footable.sortable.js"></script>
+    <script src="js/footable.paginate.js"></script>
+  
+</head>
+<body>
+<div class="sidebar">
+    <div class="py-3">
+        <ul class="pt-2 ps-4">
+        <li class="pb-lg-4 pb-md-4 pb-2"> <a class="logo" href="">
+            <img src="https://d2zo3rt1cr75v5.cloudfront.net/Test/Logo/tax2efilelogo.png" alt="tax2efile" class="tax_logo"></a></li>
+        <li class="pb-2 fw-bold h5"><i class="fa fa-user" aria-hidden="true"></i> Welcome Liza!</li>
+        <li class="pb-lg-4"><a class="btn signout-btn px-4 py-2 w-75"><i class="fa fa-power-off pe-2" aria-hidden="true"></i> Sign out</a></li>
+    </ul>
+    <ul class="prepaid-bg py-4 mobile-hide">
+        <li class="ps-4 text-color fw-bold">
+         Prepaid Credit Balance
+        </li>
+        <li class="ps-4">1</li>
+        <li class="ps-4">Available Forms</li>
+        <li class="ps-4 text-color fw-bold">You saved:</li>
+        <li class="ps-4">$0.00</li>
+        <li class="ps-4">
+           <a href="" type="button" class="btn login-btn px-4 py-2 w-75">Prepaid Filings</a>
+            
+        </li>
+    </ul>
+        <ul class="ps-4 mobile-hide">
+            <li class="pb-3 h5">Support</li>
+                   <li class="pb-3"><a href="javascript:;" class=""><i class="fa fa-phone"></i> <span class="ps-1">CALL US&nbsp; 703-229-0326</span>
+                   <span class="ps-4">Hablamos Espanol!</span></a> </li>
+                  
+                    <li class="pb-3"><a href="mailto:support@tax2efile.com" class=""><i class="fa fa-envelope-o pe-1"></i> Email Us</a> </li>
+                    <li class="pb-3"><a><img src="https://d2zo3rt1cr75v5.cloudfront.net/Test/Images/live-chat.jpg" alt="live-chat"></a></li>
+                   
+                    <li class="pb-3"><a href="https://www.youtube.com/user/tax2efile/videos" target="_blank" class=""><i class="fa fa-external-link pe-1" aria-hidden="true"></i> Refer and Earn</a> </li>
+                   <li class="pb-3"><a href="https://www.youtube.com/user/tax2efile/videos" target="_blank" class=""><i class="fa fa-folder-open-o pe-1" aria-hidden="true"></i> Latest News</a> </li>
+                   
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <div class="fixed-header pt-lg-3 ">
+<div class="container-fluid">
+    
+         <div class="row d-flex justify-content-end">
+
+            <div class="col-lg-4 col-md-6 col-6 pb-3">
+            <div class="input-group">
+                <span class="input-group-append">
+                <button class="btn bg-white border-end-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+            <input class="form-control border-start-0 border form-search" type="text" placeholder="How we can help you?" value="" id="">
+            
+     </div>
+         </div>
+         <div class="col-lg-2 col-md-6 pb-3 align-self-center mobile-hide"><a class="btn signout-btn p-2 w-100"><i class="fa fa-play-circle-o pe-2" aria-hidden="true"></i> Help Videos</a></div>
+         <div class="col-lg-2 col-md-6 pb-3 align-self-center mobile-hide"><a class="btn signout-btn p-2 w-100"><i class="fa fa-hdd-o pe-2" aria-hidden="true"></i> FAQs</a></div>
+         <div class="col-lg-2 col-md-6 col-6 pb-3 align-self-center"><a class="btn login-btn p-2 w-100"><i class="fa fa-keyboard-o pe-2" aria-hidden="true"></i> Dashboard</a></div>
+        </div>
+    </div>
+</div>
+    <section class="body-content pb-5">
+        <div class="container-fluid">
+            <p>Please select option 1 or 2 to start filing</p>
+            <div class="row">
+                <div class="col-lg-6 mb-3">
+                    <div class="card h-100 purchase-bg border-0">
+            <div class="purchase-bg py-2 px-3 mb-2">
+            <h3><span class="badge service-badge me-2">1</span>1099 Forms Self Service</h3>
+        </div>
+         <div class="py-2 px-3 mb-2 h-75 py-5">
+        <div class="row">
+            <div class="col-lg-5">
+         <p class="premium-text pt-3">Please select from the dropdown list</p>
+         <div class="select">
+                 <select class="form-select rounded-0">
+      <option>Select a form</option>
+      <option>Form 1099-A</option>
+      <option>Form 1099-B</option>
+      <option>Form 1099-C</option>
+       <option>Form 1099-CAP</option>
+      <option>Form 1099-DIV</option>
+      <option>Form 1099-G</option>
+      <option>Form 1099-H</option>
+       <option>Form 1099-INT</option>
+      <option>Form 1099-K</option>
+      <option>Form 1099-LS</option>
+      <option>Form 1099-LTC</option>
+       <option>Form 1099-MISC</option>
+      <option>Form 1099-NEC</option>
+      <option>Form 1099-OID</option>
+      <option>Form 1099-PATR</option>
+       <option>Form 1099-Q</option>
+       <option>Form 1099-QA</option>
+      <option>Form 1099-R</option>
+      <option>Form 1099-S</option>
+      <option>Form 1099-SA</option>
+       <option>Form 1099-SB</option>
+    </select>
+</div>
+         <p class="pt-3"><a href="" type="button" class="btn login-btn px-4 py-1">Next</a></p>
+
+</div>
+ <div class="col-lg-7 duedate-box">
+     <div class="due-date px-3 py-4">
+         <p>Use Form 1099-A to report the acquired interest in a property that is for the security of a debt or that properties abandonment</p>
+         <p class="fw-bold"> Due Date: March 31st</p>
+     </div>
+ </div>
+</div>
+
+        </div>
+    </div>
+            </div>
+            <div class="col-lg-6 mb-3 premium-width">
+                <div class="card h-100 purchase-bg border-0">
+            <div class="purchase-bg py-2 px-3 mb-2">
+            <h3><span class="badge service-badge me-2">2</span> Premium Services</h3>
+        </div>
+         <div class="py-2 px-3 mb-2 py-3">
+          <p class="premium-text pb-3">Premium service tax filing is designed to assist customers with busy schedules. Our trained customer support team will take care of preparing and file your taxes for you. Download and fill out our excel template with the necessary information and submit the file to us. Valid only for customers with 10 or more forms to submit.</p>
+<div class="row pb-3">
+            <div class="col-lg-1">
+               <p class="badge service-badge badge-font">1</p> 
+            </div>
+              <div class="col-lg-5 pe-0 align-self-center">
+                   <p class="premium-text">Select the Tax Form to Download Excel Sheet</p>
+                  <p class="premium-text">Skip this step if you already have your own excel sheet</p>
+              </div>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+              <div class="select">
+                 <select class="form-select rounded-0">
+      <option>Select a form</option>
+      <option>Form 1099-A</option>
+      <option>Form 1099-B</option>
+      <option>Form 1099-C</option>
+       <option>Form 1099-CAP</option>
+      <option>Form 1099-DIV</option>
+      <option>Form 1099-G</option>
+      <option>Form 1099-H</option>
+       <option>Form 1099-INT</option>
+      <option>Form 1099-K</option>
+      <option>Form 1099-LS</option>
+      <option>Form 1099-LTC</option>
+       <option>Form 1099-MISC</option>
+      <option>Form 1099-NEC</option>
+      <option>Form 1099-OID</option>
+      <option>Form 1099-PATR</option>
+       <option>Form 1099-Q</option>
+       <option>Form 1099-QA</option>
+      <option>Form 1099-R</option>
+      <option>Form 1099-S</option>
+      <option>Form 1099-SA</option>
+       <option>Form 1099-SB</option>
+    </select>
+</div>
+</div>
+              <div class="col-lg-2 ps-lg-0"><p><a class="btn signout-btn px-3 py-1">Download</a></p></div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-lg-1">
+               <p class="badge service-badge badge-font">2</p> 
+            </div>
+              <div class="col-lg-7 align-self-center">
+              <p class="premium-text"> Upload your own file or our completed Tax2efile Excel Template</p>
+                  
+              </div>
+              <div class="col-lg-3"><p><a class="btn signout-btn px-4 py-1" data-bs-toggle="modal" data-bs-target="#myModal">Upload</a></p></div>
+          </div>
+          </div>   
+          </div>
+        </div>
+    </div>
+   
+        <div class="purchase-bg py-3 px-3 mb-2">
+             <div class="row">
+            <div class="col-lg-auto">
+            <h4 class="text-color mt-2">Submission History</h4>
+        </div>
+        <div class="col-lg-5">
+            <div class="input-group">
+                <span class="input-group-append">
+                <button class="btn bg-white border-end-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+            <input class="form-control border-start-0 border form-search rounded-5" type="text" placeholder="Search by Reference Number, Business Name, Tax Year, Form Type" value="" id="">
+            
+     </div>
+ </div>
+        </div>
+    </div>
+    <div class="purchase-bg py-3 px-3 mb-2">
+<div class="table-responsive">
+<table class="table footable border-0" data-page-navigation="" data-page-size="4" >
+<thead>
+<tr>
+
+<th class="footable-sortable" data-class="expand" data-sort-ignore="true">Form Type</th>
+<th class="footable-sortable" >Reference Number</th>
+<th class="footable-sortable" data-hide="phone">Business Name</th>
+<th class="footable-sortable" data-hide="phone">Tax Year</th>
+<th class="footable-sortable" data-hide="phone,tablet,desktop">Payee Count</th>
+<th class="footable-sortable" data-hide="phone,tablet">Filing Status</th>
+<th class="footable-sortable" data-hide="phone,tablet,desktop">Creation Date</th>
+<th class="footable-sortable" data-hide="phone,tablet,desktop">Return</th>
+<th class="footable-sortable" data-hide="phone,tablet">Correction</th>
+<th class="footable-sortable" data-hide="phone,tablet,desktop">1096</th>
+</tr>
+</thead>
+<tbody>
+  <tr>   
+          <td>MISC</td>
+          <td>109908191153</td>
+          <td>Lizas business</td>
+          <td>2020</td>
+          <td>1</td>
+          <td> <span class="dot me-2 bg-blocked"></span>Blocked</td>
+          <td>2021-02-01</td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Correction</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+        </tr>
+<tr>
+
+<td>OID</td>
+<td>109908191153</td>
+<td>Lizas business</td>
+<td>2020</td>
+<td>1</td>
+<td><span class="dot me-2 bg-notcomplete"></span> Not Complete</td>
+<td>2021-02-01</td>
+<td><a class="btn button-disable disabled px-3 py-1">Download</a></td>
+<td><a class="btn button-disable disabled px-3 py-1">Correction</a></td>
+<td><a class="btn button-disable disabled px-3 py-1">Download</a></td>
+</tr>
+<tr>     
+          <td>MISC</td>
+          <td>109908191153</td>
+          <td>Lizas business</td>
+          <td>2020</td>
+          <td>1</td>
+          <td><span class="dot me-2 bg-accept"></span> Accepted</td>
+          <td>2021-02-01</td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Correction</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+        </tr>
+        <tr>
+          <td>MISC</td>
+          <td>109908191153</td>
+          <td>Lizas business</td>
+          <td>2020</td>
+          <td>1</td>
+          <td><span class="dot me-2 bg-submit"></span> Submitted</td>
+          <td>2021-02-01</td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Correction</a></td>
+          <td><a class="btn signout-btn px-3 py-1">Download</a></td>
+        </tr>
+</tbody>
+</table>
+</div>
+  <div class="mt-3">  
+    <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a></li>
+  </ul></div> 
+  
+    </div>
+            </div>
+      <!--   </div>
+      
+        </div> -->
+        <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header shadow-sm">
+        <h3 class="modal-title text-color">Upload Excel</h3>
+      
+        <a href="" type="button" class="btn cancel-btn px-3 py-2" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a>
+      </div>
+      <div class="modal-body">
+      <div class="row pb-3">
+            <div class="col-lg-auto">
+               <p class="badge service-badge badge-font">1</p> 
+            </div>
+              <div class="col-lg-4 px-0  align-self-center">
+                   <p class="premium-text">Select the Tax Form</p>
+                 
+              </div>
+              <div class="col-lg-6 mb-3 px-0 mb-lg-0">
+              <div class="select">
+                 <select class="form-select rounded-0">
+      <option>Select a form</option>
+      <option>Form 1099-A</option>
+      <option>Form 1099-B</option>
+      <option>Form 1099-C</option>
+       <option>Form 1099-CAP</option>
+      <option>Form 1099-DIV</option>
+      <option>Form 1099-G</option>
+      <option>Form 1099-H</option>
+       <option>Form 1099-INT</option>
+      <option>Form 1099-K</option>
+      <option>Form 1099-LS</option>
+      <option>Form 1099-LTC</option>
+       <option>Form 1099-MISC</option>
+      <option>Form 1099-NEC</option>
+      <option>Form 1099-OID</option>
+      <option>Form 1099-PATR</option>
+       <option>Form 1099-Q</option>
+       <option>Form 1099-QA</option>
+      <option>Form 1099-R</option>
+      <option>Form 1099-S</option>
+      <option>Form 1099-SA</option>
+       <option>Form 1099-SB</option>
+    </select>
+</div>
+</div>
+              
+          </div>
+          <div class="row">
+            <div class="col-lg-auto">
+               <p class="badge service-badge badge-font">2</p> 
+            </div>
+              <div class="col-lg-10 px-0 align-self-center">
+              <p class="premium-text"> Upload your own file or our completed Tax2efile Excel Template</p>
+                
+              </div>
+            
+          </div>
+          <div class="row px-3 mb-3">
+              <div class="file-upload text-center py-4">
+  <div class="icon">
+    <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+</div>
+  <p class="text-center">Drop and drag files or Browse</p>
+ <input type="file" class="form-control" multiple="" hidden>
+</div> 
+<div class = "alert alert-light border alert-dismissible mt-3 py-1">  
+<button type = "button" class = "btn-close pt-2 pb-1" data-bs-dismiss = "alert"></button>  
+Complete ETAX 1099 
+</div> 
+<div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<p class="pt-3">Uploaded</p>  
+<div class = "alert alert-light border-success alert-dismissible  py-1 text-color">  
+<button type = "button" class = "btn-close pt-2 pb-1" data-bs-dismiss = "alert"></button>  
+Complete ETAX 1099 
+</div>
+          </div>
+           <div class="row">
+            <div class="col-lg-auto">
+               <p class="badge service-badge badge-font">3</p> 
+            </div>
+              <div class="col-lg-10 px-0 mt-2 align-self-center">
+              <p class="premium-text"> Comments? Please share them in the box below</p>
+                    
+              </div>
+            
+          </div>
+          <div class="row px-3 excel-upload pb-3">
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+           <div class="row pb-3">
+          <div class="col-lg-3 offset-lg-9"><a href="" type="button" class="btn login-btn px-3 py-1 float-lg-end">Submit</a></div>
+            
+          </div>
+      </div>
+    
+
+    </div>
+  </div>
+    </section>
+</div>
+<footer class="fixed-footer py-5 px-4">
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-lg-6 align-self-center pt-lg-3">
+            <p class="text-start mb-0"><a href="http://test.tax2efile.com/privacy-and-policy" title="Privacy Policy">Privacy Policy</a> | <a href="http://test.tax2efile.com/terms-and-conditions" title="Terms and Conditions">Terms and Conditions</a> | <a href="http://test.tax2efile.com/pricing" title="Pricing">Pricing</a></p>
+            <p class="text-lg-start mb-0">Copyright © 2022 <a href="http://test.tax2efile.com/">Tax2efile</a> </p>
+           </div>
+           <div class="col-lg-6 pt-4 pt-lg-0">
+               <div class="text-lg-end">
+               <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/authorize-net.png" class="px-2">
+               <a href="https://www.irs.gov/e-file-providers/2290-mef-providers" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/irs-efile-provider.png" class="px-2">
+                
+                            </a>
+                            <a href="https://seal.godaddy.com/verifySeal?sealID=gir9is9Zevw1MIuYo3l9u3rWe1FTrhZGF1HnSm46kIODXbpUUNXufUO" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/godaddy-secure.png" class="px-2">
+                            </a> <a href="http://www.siteadvisor.com/sitereport.html?url=tax2efile.com" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/mcafee-secure.png" class="px-2 w-25">
+                            </a>
+                        </div>
+           </div>
+       </div> 
+    </div>
+       
+  </footer>
+    </body>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+
+            $('.footable').footable({
+                breakpoints: {
+                    phone: 480,
+                    tablet: 768,
+                    desktop: 1400
+                }
+            });
+
+        });
+
+       
+    });
+
+  
+   
+</script>
+    </html>

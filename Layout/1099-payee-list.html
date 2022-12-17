@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>1099-payeelist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/styles.css" rel="stylesheet">
+ <link href="css/font-awesome.min.css" rel="stylesheet">
+ <link rel="icon" type="image/png" sizes="16x16" href="https://d2zo3rt1cr75v5.cloudfront.net/Test/Images/favicon.png">
+    <link href="css/footable-0.1.css" rel="stylesheet">
+    <link href="css/footable.sortable-0.1.css" rel="stylesheet">
+    <link href="css/footable.paginate.css" rel="stylesheet">
+
+   <script src="js/bootstrap.min.js"></script>
+       <script src="js/jquery.min.js"></script>
+    <script src="js/footable.js"></script>
+    <script src="js/footable.sortable.js"></script>
+    <script src="js/footable.paginate.js"></script>
+  
+</head>
+<body>
+<div class="sidebar">
+    <div class="py-3">
+        <ul class="pt-2 ps-4">
+        <li class="pb-lg-4 pb-md-4 pb-2"> <a class="logo" href="">
+            <img src="https://d2zo3rt1cr75v5.cloudfront.net/Test/Logo/tax2efilelogo.png" alt="tax2efile" class="tax_logo"></a></li>
+        <li class="pb-2 fw-bold h5"><i class="fa fa-user" aria-hidden="true"></i> Welcome Liza!</li>
+        <li class="pb-lg-4"><a class="btn signout-btn px-4 py-2 w-75"><i class="fa fa-power-off pe-2" aria-hidden="true"></i> Sign out</a></li>
+    </ul>
+    <ul class="prepaid-bg py-4 mobile-hide">
+        <li class="ps-4 text-color fw-bold">
+         Prepaid Credit Balance
+        </li>
+        <li class="ps-4">1</li>
+        <li class="ps-4">Available Forms</li>
+        <li class="ps-4 text-color fw-bold">You saved:</li>
+        <li class="ps-4">$0.00</li>
+        <li class="ps-4">
+           <a href="" type="button" class="btn login-btn px-4 py-2 w-75" target="_blank">Prepaid Filings</a>
+            
+        </li>
+    </ul>
+        <ul class="ps-4 mobile-hide">
+            <li class="pb-3 h5">Support</li>
+                   <li class="pb-3"><a href="javascript:;" class=""><i class="fa fa-phone"></i> <span class="ps-1">CALL US&nbsp; 703-229-0326</span>
+                   <span class="ps-4">Hablamos Espanol!</span></a> </li>
+                  
+                    <li class="pb-3"><a href="mailto:support@tax2efile.com" class=""><i class="fa fa-envelope-o pe-1"></i> Email Us</a> </li>
+                    <li class="pb-3"><a><img src="https://d2zo3rt1cr75v5.cloudfront.net/Test/Images/live-chat.jpg" alt="live-chat"></a></li>
+                   
+                    <li class="pb-3"><a href="https://www.youtube.com/user/tax2efile/videos" target="_blank" class=""><i class="fa fa-external-link pe-1" aria-hidden="true"></i> Refer and Earn</a> </li>
+                   <li class="pb-3"><a href="https://www.youtube.com/user/tax2efile/videos" target="_blank" class=""><i class="fa fa-folder-open-o pe-1" aria-hidden="true"></i> Latest News</a> </li>
+                   
+        </ul>
+    </div>
+
+</div>
+
+<div class="content">
+    <div class="fixed-header pt-lg-3 ">
+<div class="container-fluid">
+    
+         <div class="row d-flex justify-content-end">
+
+            <div class="col-lg-4 col-md-6 col-6 pb-3">
+            <div class="input-group">
+                <span class="input-group-append">
+                <button class="btn bg-white border-end-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+            <input class="form-control border-start-0 border form-search" type="text" placeholder="How we can help you?" value="" id="">
+            
+     </div>
+         </div>
+         <div class="col-lg-2 col-md-6 pb-3 align-self-center mobile-hide"><a class="btn signout-btn p-2 w-100"><i class="fa fa-play-circle-o pe-2" aria-hidden="true"></i> Help Videos</a></div>
+         <div class="col-lg-2 col-md-6 pb-3 align-self-center mobile-hide"><a class="btn signout-btn p-2 w-100"><i class="fa fa-hdd-o pe-2" aria-hidden="true"></i> FAQs</a></div>
+         <div class="col-lg-2 col-md-6 col-6 pb-3 align-self-center"><a class="btn login-btn p-2 w-100"><i class="fa fa-keyboard-o pe-2" aria-hidden="true"></i> Dashboard</a></div>
+        </div>
+    </div>
+</div>
+    <section class="body-content pb-5 payer-list">
+        <div class="container-fluid">
+            <div class="row pb-4">
+                <div class="col-lg-12">
+            <div class="payer-stepper">
+                <ul>
+                    <li class="px-2 py-3"><div class="stepper-text fw-bold"><img src="images/step-complete.png" alt="step" class=""> Tax Information & Payer List</div></li>
+                    <li class="px-5 py-3"><div class="stepper-text fw-bold"><img src="images/step-complete.png" alt="step" class=""> Payee Information</div></li>
+                    <li class="px-5 py-3"><div class="stepper-text fw-bold"><img src="images/step-inprogress.png" alt="step" class=""> Review</div></li>
+                    <li class="px-5 py-3 fw-bold"><img src="images/step-inprogress.png" alt="step" class="">  E-file Sent</li>
+                </ul>
+            </div>
+        </div>
+       <!--  <div class="col-lg-2 ps-0 text-lg-end mt-3 mt-lg-0"><a href="" type="button" class="btn signout-btn px-3 py-2" target="_blank"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a></div> -->
+        </div>
+
+   
+       <div class="purchase-bg px-3 mb-2 pb-3">
+           <div class="row">
+            <div class="col-lg-auto col-xxl-auto pt-3">
+             <h4 class="text-color mt-3"><span class="badge service-badge me-2">2</span>Payee’s List</h4>
+        </div>
+        <div class="col-xxl-3 col-lg-6 pt-4">
+            <div class="input-group">
+                <span class="input-group-append">
+                <button class="btn bg-white border-end-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+            <input class="form-control border-start-0 border form-search rounded-5" type="text" placeholder="Search by Payee’s Name, EIN or SSN" value="" id="">
+            
+     </div>
+ </div>
+  <div class="col-xxl-2 col-lg-3 pt-3 pt-lg-4">
+      <a class="btn signout-btn px-xxl-2 px-lg-1 px-xl-2 py-2"><i class="fa fa-plus-circle pe-1" aria-hidden="true"></i> Add New Payee</a>
+    
+  </div>
+  <div class="col-xxl-5 col-lg-12 text-xxl-end">
+      <a class="btn login-btn px-4 py-2 me-2 mt-3 mt-lg-4">Bulk Upload</a>
+      <a class=""><img src="images/quick-books.png" alt="quick books" class="px-2  mt-3 mt-lg-4"></a>
+      
+  </div>
+        </div>
+        <div class="row pt-4">
+            <p>Please select the Payee(s) from the payee’s list and click the continue button to proceed. If you need to add a new Payee to the list, click the Add new payee button. If you need to add multiple payees, click the bulk upload feature.</p>
+        </div>
+    </div>
+  
+    <div class="purchase-bg py-3 px-3 mb-2">
+<div class="table-responsive">
+<table class="table footable border-0" data-page-navigation="" data-page-size="4" >
+<thead>
+<tr>
+
+<th class="footable-sortable" data-class="expand" data-sort-ignore="true"><input class="form-check-input" type="checkbox" value="" id=""> All</th>
+<th class="footable-sortable" >TIN</th>
+<th class="footable-sortable" data-hide="phone">Name</th>
+<th data-sort-ignore="true" data-hide="phone,tablet">Address</th>
+<th data-sort-ignore="true" data-hide="phone,tablet">Federal Amount</th>
+<th data-sort-ignore="true" data-hide="phone,tablet">State Amount</th>
+<th  data-sort-ignore="true" data-hide="phone">Edit</th>
+</tr>
+</thead>
+<tbody>
+  <tr>   
+          <td><input class="form-check-input" type="checkbox" value="" id=""></td>
+          <td>345654434</td>
+          <td>Pamela Romero Saenz</td>
+          <td>2283 Snow Powder Ter</td>
+          <td>$190.00</td>
+          <td>$187.49</td>
+          <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+        </tr>
+ <tr>   
+          <td><input class="form-check-input" type="checkbox" value="" id=""></td>
+          <td>345465443</td>
+          <td>Josh Ryan</td>
+          <td>897 Little Town Rd</td>
+          <td>$50.20</td>
+          <td>S30.45</td>
+          <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+        </tr>
+ <tr>   
+          <td><input class="form-check-input" type="checkbox" value="" id=""></td>
+          <td>345465456</td>
+          <td>Liz James</td>
+          <td>987 Smart Street</td>
+          <td>$64.00</td>
+          <td>S56.70</td>
+          <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+        </tr>
+ <tr>   
+          <td><input class="form-check-input" type="checkbox" value="" id=""></td>
+          <td>345567895</td>
+          <td>Ronal Reagan</td>
+          <td>567 Town Village</td>
+          <td>$20.45</td>
+          <td>S0.00</td>
+          <td><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></td>
+        </tr>
+</tbody>
+</table>
+</div>
+  <div class="mt-3">  
+    <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a></li>
+  </ul></div> 
+  
+    </div>
+    <div class="row mt-5">
+                <div class="col-lg-6 align-self-center pb-3 pb-lg-0"><a href="" type="button" class="btn px-3 py-2 signout-btn">Previous</a></div>
+                <div class="col-lg-6 text-lg-end">
+                    <a href="" type="button" class="btn signout-btn  px-3 py-2 me-4"><i class="fa fa-times" aria-hidden="true"></i> Delete</a>
+                    <a href="" type="button" class="btn signout-btn px-5 py-2">Continue</a></div>
+            </div>
+            </div>
+    </section>
+</div>
+<footer class="fixed-footer py-5 px-4">
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-lg-6 align-self-center pt-lg-3">
+            <p class="text-start mb-0"><a href="http://test.tax2efile.com/privacy-and-policy" title="Privacy Policy">Privacy Policy</a> | <a href="http://test.tax2efile.com/terms-and-conditions" title="Terms and Conditions">Terms and Conditions</a> | <a href="http://test.tax2efile.com/pricing" title="Pricing">Pricing</a></p>
+            <p class="text-lg-start mb-0">Copyright © 2022 <a href="http://test.tax2efile.com/">Tax2efile</a> </p>
+           </div>
+           <div class="col-lg-6 pt-4 pt-lg-0">
+               <div class="text-lg-end">
+               <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/authorize-net.png" class="px-2">
+               <a href="https://www.irs.gov/e-file-providers/2290-mef-providers" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/irs-efile-provider.png" class="px-2">
+                
+                            </a>
+                            <a href="https://seal.godaddy.com/verifySeal?sealID=gir9is9Zevw1MIuYo3l9u3rWe1FTrhZGF1HnSm46kIODXbpUUNXufUO" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/godaddy-secure.png" class="px-2">
+                            </a> <a href="http://www.siteadvisor.com/sitereport.html?url=tax2efile.com" target="_blank">
+                                <img src="https://tax2efilelive.s3.amazonaws.com/Live/Images/mcafee-secure.png" class="px-2 w-25">
+                            </a>
+                        </div>
+           </div>
+       </div> 
+    </div>
+       
+  </footer>
+    </body>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+
+            $('.footable').footable({
+                breakpoints: {
+                    phone: 480,
+                    tablet: 768,
+                    desktop: 1400
+                }
+            });
+
+        });
+
+       
+    });
+
+  
+   
+</script>
+    </html>
